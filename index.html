@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <title>mini-project</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">logo</a>
+
+        <nav>
+            <a href="#" class="active">home</a>
+            <a href="#">about</a>
+            <a href="#">evenet</a>
+            <a href="#">contact</a>
+        </nav>
+    </header>
+    <section class="parallaz">
+        <h1 class="text" >parallaz website</h1>
+        <img src="images/monutain_01.png" id="m1" alt="monutain-1">
+        <img src="images/trees_02.png" id="t2" alt="trees-2">
+        <img src="images/monutain_02.png" id="m2" alt="monutain-2">
+        <img src="images/trees_01.png" id="t1" alt="trees-1">
+        <img src="images/man.png" id="man" alt="man">
+        <img src="images/plants.png" id="plants" alt="plants">
+    </section>
+    <section class="pargraf">
+        <h2>parallaz scrolling website</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia molestiae, accusantium, perspiciatis expedita repellat nihil suscipit necessitatibus recusandae ratione dolorum magnam iure! Minus maxime totam voluptatibus et a obcaecati eaque reiciendis ducimus blanditiis fugiat corporis maiores neque, sint hic sequi ab voluptates in, veniam reprehenderit voluptatum. Fugiat facere voluptatem perspiciatis porro deserunt inventore, minima dignissimos beatae veniam eius quisquam facilis rerum nisi aliquid doloremque accusantium cupiditate labore aut temporibus. Corrupti, totam. Aliquam eligendi deleniti atque sit temporibus commodi quibusdam, provident praesentium, totam expedita eaque consectetur iure unde facere animi at ipsum deserunt asperiores autem cumque illum quasi labore? Quia possimus, eum laudantium tenetur facilis voluptates deleniti doloribus! Facere ratione eligendi ipsa corrupti <br> <br>unde veniam rem aperiam hic a eveniet? Autem quibusdam excepturi pariatur harum sapiente, mollitia voluptatibus recusandae, quasi, atque ab nemo ipsum distinctio expedita? Sunt obcaecati incidunt, eaque ratione deserunt, officiis labore rem, voluptatem placeat facere amet tenetur aut atque non dolore. Consequatur adipisci esse laborum officiis, porro, rerum expedita repudiandae nesciunt nisi ab nobis animi dicta excepturi laudantium maxime corrupti sed nulla. Aliquam distinctio quam velit nulla sequi pariatur est tempora nesciunt necessitatibus accusantium odio rem minima molestias possimus doloribus corporis nisi exercitationem reiciendis, esse ab ipsam accusamus ut harum? Vero voluptatibus quasi blanditiis inventore debitis necessitatibus incidunt odio quae repudiandae? Quam libero cupiditate ipsa veniam maxime aspernatur aliquid sint adipisci esse tempore maiores eum corrupti sunt nemo corporis minus distinctio velit dolore aliquam beatae, eaque, quibusdam fugit nobis! Veritatis aliquid quae eum in vitae pariatur deserunt, ratione laudantium fugiat quasi mollitia vero qui saepe aspernatur libero veniam ex, quas consectetur. Adipisci exercitationem repellat nostrum nesciunt eaque nobis <br><br> inventore quasi, accusamus voluptatem fugiat, ad nisi assumenda? Accusantium, minus blanditiis? Quidem rem nobis veritatis ducimus non, dignissimos facere vel cum, mollitia porro veniam. Eaque, commodi quis adipisci hic dolor ab natus officia explicabo dolores fugit sed ratione. Libero eveniet consectetur adipisci beatae, exercitationem nam laudantium nihil dolore corporis vitae eum consequuntur ut aliquid vel optio nobis! Quam sequi possimus animi, natus beatae rem hic praesentium perferendis ipsam sit sint ea consectetur exercitationem sunt delectus optio accusantium porro, asperiores tempora minima! Culpa earum esse nam vitae ipsa eius harum delectus quos illo beatae repellendus, reprehenderit architecto! Nesciunt veniam quaerat perspiciatis. Eaque dolorem nostrum eveniet id aperiam similique. Quasi unde porro delectus ullam amet nulla perferendis nemo. Quod vitae expedita quae reprehenderit nam ab sed ea eveniet consectetur, veniam cum harum soluta nulla, quam nesciunt ipsam dolor itaque voluptatem voluptas? Earum nobis maiores quos eos quibusdam impedit dolor quis possimus veniam quam cumque architecto, mollitia porro quidem maxime sed. Totam impedit quod, adipisci facilis ad veniam praesentium necessitatibus reprehenderit veritatis unde eos, placeat laborum deserunt aliquid maiores earum, aspernatur eveniet nemo?</p>
+    </section>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"></script>
+    <script>
+        gsap.from('#m1', {
+            scrollTrigger : {
+                scrub : true,
+            },
+            y : 200,
+        })
+
+        gsap.from('#m2', {
+            scrollTrigger : {
+                scrub : true,
+            },
+            y : 100,
+        })
+
+        gsap.from('#t2', {
+            scrollTrigger : {
+                scrub : true,
+            },
+            x : 50,
+        })
+
+        gsap.from('#t1', {
+            scrollTrigger : {
+                scrub : true,
+            },
+            x : -50,
+        })
+
+        gsap.from('#man', {
+            scrollTrigger : {
+                scrub : true,
+            },
+            x : -100,
+        })
+
+        gsap.from('#plants', {
+            scrollTrigger : {
+                scrub : true,
+            },
+            x : -50,
+        })
+        
+        // gsap.from('.text', {
+        //     scrollTrigger : {
+        //         scrub : true,
+        //     },
+        //     x : 0,
+        // })
+    </script>
+</body>
+</html>
